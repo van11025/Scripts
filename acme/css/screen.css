@@ -1,0 +1,183 @@
+/* 1.General Styles */
+
+body {
+    background-image: url('/acme/images/site/background.jpg');
+    background-size: cover;
+    list-style: none;
+}
+body>*{
+background-color: white;
+font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Set up the grid */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+/* 2.Mobile Styles */
+
+ /*Style the Header*/
+#site-brand {
+    width:auto;
+    Height: 60px;
+    justify-content: left;
+}
+#login-button {
+    width: auto;
+    height: 15px;
+}
+
+#site-header {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+  /* Style the nav bar */
+  nav {
+      height: auto;
+      display: flex;
+      flex-direction: row;
+    background-color:#de2226;
+    height: auto;
+    
+}
+#siteNav ul {
+    list-style: none;
+    background-color: #de2226;
+    color: #ffffff;
+    display:flex;
+}
+#siteNav a {
+    text-decoration: none;
+    color:#ffffff;
+    padding: 15px;
+}
+
+/* Style the main content */
+#main-content {
+    display: grid;
+    
+}
+
+#detailsBox {
+    display:flex;
+    flex-direction: column;
+}
+
+#imgBox {
+    
+}
+
+#prodimage {
+    
+}
+
+/* Style the footer */
+#site-footer {
+    text-align: center;
+}
+#prod-display {
+    display:flex;
+    justify-content: center;
+}
+
+/* 3.Desktop Styles */
+@media screen and (min-width: 700px){
+    /* Style the body of the page */
+    body {
+        margin-left: 60px;
+        margin-right:60px;
+    }
+    #main-content {
+        display: flex;
+       
+        background-position: center center;
+        background-image: url('/acme/images/site/rocketfeature.jpg');
+        background-size: cover;
+        height: 500px;
+    }
+    #TestIMG {
+        display:none;
+    }
+
+    #login {
+        text-align: right;
+        text-decoration: none;
+    }
+    /* Style the nav bar */
+    nav {
+        display:flex;
+        background-color:#de2226;
+        height: auto;
+        padding:1px;
+    }
+    #siteNav ul {
+        overflow-wrap: break-word;
+        background-color: #de2226;
+        color: #ffffff;
+        display:flex;
+    }
+    #siteNav a {
+        text-decoration: none;
+        color:#ffffff;
+        padding: 15px;
+    }
+    #siteNav a:hover {
+        color:#de2226;
+        background-color:#ffffff;
+    }
+
+    /* Style the Login form */
+    #loginForm{
+        background-color:#ffffff;
+        font-size: 25px;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        color:#000000;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        padding: 30px;
+    }
+    #loginForm button {
+        background-color:#de2226;
+        color:#ffffff;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        height:50px;
+        width: 100px;
+    }
+    #loginForm button:hover {
+        background-color: #000000;
+        color:#ffffff;
+    }
+    #detailsBox {
+        flex-direction: row;
+    }
+
+    /* Style the categories */
+    #prod-display {
+        width:auto;
+        text-decoration: none;
+        display:grid;
+    
+    }
+    #prod-display li {
+        text-decoration: none;
+    }
+
+    /* Style Product Details */
+    
+}
